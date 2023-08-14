@@ -1,0 +1,209 @@
+
+/* main container of the page */
+.App {
+  font-family: sans-serif;
+  color:#6fc0e5;
+  display: flex;
+  justify-content: space-around; 
+}
+
+/* the i pod with screen and buttons */
+.iPod{
+  margin-top:50px ;
+  height: 500px;
+  width: 300px;
+  background-image: linear-gradient( 86.3deg,  rgb(4, 75, 114) 3.6%, rgb(7, 21, 59) 87.6% );
+  border-radius:0.8rem;
+  display: flex;
+  flex-direction: column;
+  padding:10px;
+  box-shadow:-2px 6px 11px 3px grey;
+}
+
+.iPod>div {
+  display: flex;
+}
+
+/* the speaker showing over the screeen of the i pod */
+.speaker_container{
+  height: 2%;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1% 0px;
+}
+
+.speaker{
+  height: 100%;
+  width: 50px;
+  background-color: #526897;
+  border-radius:2rem ;
+}
+
+
+/* the screen of the i pod where all the pages will be displayed */
+.screen{
+  width: 99%;
+  height: 55%;
+  background-image: url("./Files/image/bg-image.jpg");
+  background-size: cover;
+  position: relative;
+  border: 1px solid rgb(78, 125, 212);
+  overflow: hidden;
+}
+
+
+/* all the controling buttons */
+.controls{
+  width: 100%;
+  height: 40%;
+  background-color:inherit;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+/* heading of the menu / music-menu inside the menu */
+.heading{
+  text-align: center;
+}
+
+
+/* the outer circle containing all the buttons in the control panel */
+.motion_btn{
+  background-image: radial-gradient( circle 1086px at 1.1% 96.2%,  rgba(1,44,66,1) 0%, rgba(163,221,253,1) 53.6% );
+  display: flex;
+  border-radius:50% ;
+  justify-content: space-around;
+  align-items: center;
+  height: 80%;
+  width: 53%;
+  position: relative;
+}
+
+
+/* the small buttons over the circle */
+.btn{
+  height: 20%;
+  width: 20%;
+  position: absolute;
+  text-align: center;
+  font-size: 17px;
+}
+
+
+/* top button */
+.btn_top{
+  top: 16px;
+  left: 60px;
+  cursor: pointer;
+}
+
+/* left button */
+.btn_left{
+  left: 4%;
+  top:45%;
+}
+
+/* right button */
+.btn_right{
+  right: 4%;
+  top:44%;
+}
+
+/* bottom button */
+.btn_bottom{
+  bottom: 0%;
+  font-size: 20px;
+}
+
+
+/* the circular black button in the middle of the control buttons */
+.enter_btn{
+  display: flex;
+  border-radius:50% ;
+  background-image: linear-gradient( 86.3deg,  rgb(11, 88, 129) 3.6%, rgb(7, 21, 59) 87.6% );
+  width: 45%;
+  height: 45%;
+  cursor: pointer;
+}
+
+
+/*    Menu styles */
+.menu{
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, rgb(22, 34, 42), rgb(58, 96, 115));
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+
+/* list within the menu */
+.menu ul{
+  text-decoration: none;
+  list-style-type: none;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+}
+
+.menu li{
+  /* text-align: justify; */
+  width: 100%;
+  height: 22%;
+  margin-left: -26%;
+  padding-top: 5px;
+  font-size: 1.2rem;
+  border-top: 1px solid rgb(12 12 12);
+}
+
+/* the arrow image inside menu options */
+.menu li img{
+  height: 15px;
+  width: 15px;
+  float: right;
+  padding:5px 0 5px 0;
+}
+
+/* for the pages within the menu options */
+.single_page{
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgb(56, 96, 122), rgb(58, 96, 115));
+}
+
+/* images inside the single pages */
+.cover_image{
+  width: 100%;
+  height: 100%;
+}
+
+/* for all songs  page styling image and audio controls*/
+.song_image{
+  width: 85%;
+  height: 85%;
+}
+
+.song{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+audio{
+  width: 99%;
+  height: 25px;
+  
+}
+
+/* changing the background-color of the audio controls */
+audio::-webkit-media-controls-panel {
+  background: linear-gradient(to right, rgb(56, 96, 122), rgb(58, 96, 115));
+}
+
+/* to hightlight the selected options  */
+.active {
+  background-color: #304164;
+}
